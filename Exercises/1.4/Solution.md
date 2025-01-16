@@ -2,7 +2,7 @@
 
 `docker exec looper sh -c 'apt update; apt install curl -y'`
 
-`docker attach loope`   
+`docker attach looper`   
 ```
 helsinki.fi
 Searching..
