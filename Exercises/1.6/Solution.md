@@ -3,14 +3,7 @@
 `docker exec eloquent_lumiere cat Dockerfile`
 
 The output is:
-*
-FROM node:alpine
-
-WORKDIR /usr/app
-COPY . .
-
-CMD ["node", "index.js"]
-*
+*CMD ["node", "index.js"]*
 
 `docker exec eloquent_lumiere cat index.js | less`
 
