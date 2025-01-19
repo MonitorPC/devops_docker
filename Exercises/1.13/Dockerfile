@@ -1,0 +1,14 @@
+FROM cimg/go:1.16
+
+WORKDIR /usr/src/app
+
+ENV PORT=8080
+ENV REQUEST_ORIGIN="http://localhost"
+
+COPY . .
+
+RUN go build
+
+RUN go test ./...
+
+CMD ["./server"]
